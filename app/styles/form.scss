@@ -1,0 +1,33 @@
+.form-col {
+  border-right: 1px solid #edebeb;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select {
+  box-sizing: border-box;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  margin: 0;
+  color: red;
+}
