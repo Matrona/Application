@@ -3,6 +3,7 @@ extends layouts/default
 block content
   .content-col.form-col
     .content-title Форма для заполнения
+    .content-notice Все поля обязательны для заполнения
     form.form
       label
         | Вакантная должность:
@@ -20,8 +21,14 @@ block content
         | Ваш возраст
         input#age(type='text', name='age')
       label
-        | Паспорта (номер и серия без пробелов)
+        | Паспорт (номер и серия без пробелов)
         input#password(type='text', name='password')
+      label
+        | Дата рождения
+        input#birthday(type='text', name='birthday')
+      label
+        | О себе
+        textarea#resume(type='text', name='resume')
       button#btnSubmit(type='button', value='Submit') Submit
   .content-col.application-col
     .content-title Анкета кандидата
@@ -36,10 +43,18 @@ block content
       <span class="application-row--col-2"><%= surname %> <%= name %> <%= patronymic %></span>
     </div>
     <div class="application-row">
+      <span class="application-row--col-1">Дата рождения</span>
+      <span class="application-row--col-2"><%= birthday %></span>
+    </div>
+    <div class="application-row">
       <span class="application-row--col-1">Возраст</span>
       <span class="application-row--col-2"><%= age %></span>
     </div>
     <div class="application-row">
       <span class="application-row--col-1">Паспорт (номер и серия)</span>
       <span class="application-row--col-2"><%= password %></span>
+    </div>
+    <div class="application-row">
+      <span class="application-row--col-1">Коротко о себе</span>
+      <span class="application-row--col-2"><%= resume %></span>
     </div>

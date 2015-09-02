@@ -18,6 +18,10 @@ select {
   margin: 10px 0;
 }
 
+textarea {
+  resize: vertical;
+}
+
 label {
   margin-bottom: 15px;
   display: block;
@@ -28,6 +32,5 @@ label {
 }
 
 .error-text {
-  margin: 0;
   color: red;
 }

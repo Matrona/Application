@@ -13,6 +13,7 @@ html.no-js
     // endbuild
 
     // build:css styles/main.css
+    link(rel='stylesheet' href='styles/normalize.css')
     link(rel='stylesheet' href='styles/main.css')
     link(rel='stylesheet' href='styles/application.css')
     link(rel='stylesheet' href='styles/form.css')
@@ -53,5 +54,8 @@ html.no-js
     // endbuild
 
     // build:js scripts/main.js
-    script(src='scripts/main.js')
+    script(src='scripts/app.js')
+    script(src='scripts/models/application.js')
+    script(src='scripts/views/application-view.js')
+    script(src='scripts/views/form-view.js')
     // endbuild
